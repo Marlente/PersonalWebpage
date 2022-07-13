@@ -5,64 +5,76 @@
         <link href="stylesheet.css" rel="stylesheet">
     </head>
 
-    <body class="font-sans, bg-slate-100">
-        <header>
-            <nav class="">
-                <ul>
-                    <li class="hover:bg-slate-300, inline-block"><a href="projectgallery.html">Project Gallery</a></li>
-                    <li class="hover:bg-slate-300, inline-block"><a href="blog.html">Blog</a></li>
-                    <li class="hover:bg-slate-300, inline-block"><a href="aboutme.html">About Me</a></li>
+    <body class="font-nunito bg-slate-100">
+        <header class="border-b-2 flex">
+            <nav class="font-semibold text-gray-700 min-w-full">
+                <ul class="flex justify-around">
+                    <li class=""><a href="projectgallery.html">Project Gallery</a></li>
+                    <li class=""><a href="blog.html">Blog</a></li>
+                    <li class=""><a href="aboutme.html">About Me</a></li>
+                    <li><img class="object-cover object-center w-40" src="/Webpage/assets/signature_logo.png" alt="Brand Logo"></li>
                 </ul>
             </nav>
-            <img class="inline-block" src="/Webpage/assets/signature_logo.png" alt="Brand Logo">
         </header>
 
-        <main>
+        <main class="px-6 pt-4">
             <!-- BLOG POSTS        -->
-            <div class="bg-slate-200">
-                <h3 class="text-xl text-gray-300"><a href="/Blog Posts/exampleblogpost.html">Example Blog Post</a></h3>
+            <div class="bg-gray-200 px-4 py-2">
+                <h3 class="text-2xl text-gray-700"><a href="/Blog Posts/exampleblogpost.html">Example Blog Post</a></h3>
                 <a href="/Blog Posts/exampleblogpost.html"><img class="blogpost_logo" src="" alt=""></a>
                 <article class="blogpost_description">
                     This is my first blog post. It was a ever more pressuring desire of myself to create my own blog regardless of the fact how many people are reading it.
                 </article>
-                <p class="reading_time">5 min</p>
-                <a class="read_more" href="/Blog Posts/exampleblogpost.html">Read More...</a>
+                <p class="text-sm font-light">5 min</p>
+                <a class="border-gray-700" href="/Blog Posts/exampleblogpost.html">Read More...</a>
             </div>
-            <div class="blogpost">
-                <h3 class="blogpost_title"><a href="/Blog Posts/chaos_blogpost.html">Small Thoughts on Chaos</a></h3>
-                <a href="/Blog Posts/chaos_blogpost.html"><img class="blogpost_logo" src="" alt=""></a>
-                <article class="blogpost_description">
+
+            <div class="mt-6 bg-gray-100 px-4 py-2 rounded-lg">
+                <h3 class="text-2xl font-semibold text-gray-900"><a href="/Blog Posts/chaos/chaos_blogpost.html">Small Thoughts on Chaos</a></h3>
+                <img class="h-32 inline-block" src="/Blog Posts/chaos/chaos_icon.png" alt="Chaos Icon">
+                <article class="inline-block text-gray-800">
                     Chaos theory leads to paradox thinking: on the one hand every small cause can end up in life-changing shifts and on the other hand 
                     in a chaotic multi-causal world we can never be sure what really matters. 
                 </article>
-                <p class="reading_time">5 min</p>
-                <a class="read_more" href="/Blog Posts/chaos_blogpost.html">Read More...</a>
+                <p class="text-sm font-light mt-2">5 min</p>
+                <div class="bg-gray-600 tracking-wide text-sm inline-block text-white px-3 py-2 rounded-lg mt-4">
+                    <a class="uppercase" href="/Blog Posts/football/football_blogpost.html">Read post</a>
+                </div>
+                <div class="inline-block float-right">
+                    <ul>
+                        <li class="inline-block bg-blue-600 text-white px-2 py-1 rounded-b-lg rounded-r-lg text-xs">physics</li>
+                        <li class="inline-block bg-blue-600 text-white px-2 py-1 rounded-b-lg rounded-r-lg text-xs">deep</li>
+                    </ul>
+                </div>
             </div>
-            <div class="blogpost">
-                <h3 class="blogpost_title"><a href="/Blog Posts/football_blogpost.html">The Football Fairytail</a></h3>
-                <a href="/Blog Posts/football_blogpost.html"><img class="blogpost_logo" src="" alt=""></a>
+
+            <div class="mt-6">
+                <h3 class="text-2xl font-bold text-gray-700"><a href="/Blog Posts/football/football_blogpost.html">The Football Fairytail</a></h3>
+                <img class="h-32 inline-block" src="/Blog Posts/football/football_icon.png" alt="">
                 <article class="blogpost_description">
                     Once upon a time two friends started to steal a godgiven football from each other. This is how they will tell their grandsons and 
                     granddaughters how it all started. 
                 </article>
-                <p class="reading_time">5 min</p>
-                <a class="read_more" href="/Blog Posts/football_blogpost.html">Read More...</a>
+                <p class="text-sm font-light">5 min</p>
+                <div class="bg-gray-600 tracking-wide text-sm inline-block text-white px-3 py-2 rounded-lg mt-4">
+                    <a class="uppercase" href="/Blog Posts/football/football_blogpost.html">Read post</a>
+                </div>
             </div>
         </main>
 
-        <footer class="bg-sky-500/50">
-            <div class="socialmedia">
-                <a href="https://www.linkedin.com/in/marlo-k%C3%BCrner-1a5694175/"><img src="/Webpage/assets/linkedin_logo.png" alt="Link to personal Linkedin Profile"></a>
-                <a href="https://www.instagram.com/accounts/login/?next=/marlokuerner/"><img src="/Webpage/assets/insta_logo_black.png" alt="Link to personal Instagram Profile"></a>
-                <a href="https://github.com/Marlente"><img src="/Webpage/assets/Github_logo.png" alt="Link to personal Github profile"></a>
-                <a href=""><img src="/Webpage/assets/email_logo.png" alt="Mail to personal mail address"></a>
+        <footer class="bg-blue-100 mt-6">
+            <div class="inline-block, mt-8, p-6">
+                <a href="https://www.linkedin.com/in/marlo-k%C3%BCrner-1a5694175/"><img class="h-12" src="/Webpage/assets/linkedin_logo.png" alt="Link to personal Linkedin Profile"></a>
+                <a href="https://www.instagram.com/accounts/login/?next=/marlokuerner/"><img class="mt-6 h-12" src="/Webpage/assets/insta_logo_black.png" alt="Link to personal Instagram Profile"></a>
+                <a href="https://github.com/Marlente"><img class="h-12 mt-6" src="/Webpage/assets/Github_logo.png" alt="Link to personal Github profile"></a>
+                <a href=""><img class="h-12 mt-6" src="/Webpage/assets/email_logo.png" alt="Mail to personal mail address"></a>
             </div>
-            <ul>
+            <ul class="inline-block">
                 <li><a href="/Webpage/projectgallery.html">Project Gallery</a></li>
                 <li><a href="/Webpage/blog.html">Blog</a></li>
                 <li><a href="/Webpage/aboutme.html">About Me</a></li>
             </ul>
-            <p class="copyright">Marlo Kürner © 2022</p>
+            <p class="text-xs">Marlo Kürner © 2022</p>
         </footer>
 
     </body>

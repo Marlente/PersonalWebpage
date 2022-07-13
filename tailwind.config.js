@@ -4,7 +4,11 @@ module.exports = {
     './Webpage/**/*.{html, js, ts, vue}', 
     './Webpage/**/*'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nunito: ['Nunito']
+      }
+    },
   },
   plugins: [],
 }

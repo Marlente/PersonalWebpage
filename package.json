@@ -68,8 +68,7 @@
     "yaml": "^2.1.1"
   },
   "scripts": {
-    "dev": "vite",
-    "build-css": "tailwindcss build /Users/marlo/Documents/VScode/PersonalWebpage/src/stylesheet.css -o Webpage/stylesheet.css"
+    "dev": "vite"
   },
   "repository": {
     "type": "git",
