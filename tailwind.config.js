@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     './Webpage/**/*.{html, js, ts, vue}', 
-    './Webpage/**/*'],
+    './Webpage/**/*', './Projects/**/*', './Blog Posts/**/*'],
   theme: {
     extend: {
       fontFamily: {
