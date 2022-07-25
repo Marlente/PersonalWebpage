@@ -27,5 +27,6 @@ if(this.value.length > 140) {
 else {
     document.getElementById("lengthcount").innerHTML= comment.value.length.toString() + '/140';
     console.log(this.value.length + '/140');
+    comment.setAttribute("class", "px-3 py-2");
 }       
  });
