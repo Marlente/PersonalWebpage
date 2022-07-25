@@ -3,6 +3,7 @@
     <head>
         <title>About Me</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
     <body class="font-nunito bg-slate-100">
@@ -76,16 +77,18 @@
 
             </div>
             <!-- COMMENT BOX -->
-            <div class="mt-6 bg-slate-100">
+            <div class="mt-6 flex bg-slate-100">
                 <input id="comment-box-name" type="text" placeholder="Enter name" class="border-2 px-3 py-2">
                 <input id="comment-box-email" type="text" placeholder="Enter email" class="border-2 px-3 py-2">
                 <input id="comment-box-comment" type="text" placeholder="Enter comment" class="border-2 px-3 py-2">
+                <p id="lengthcount" type="text" class="px-3 py-2 italic text-sm">0/140</p>
                 <button id="post" class="bg-blue-500 text-white px-3 py-2 rounded-lg">Post</button>
                 <ul id="unordered">
                    
                </ul>
                
-                <script src="commentbox.js"></script>
+                <script src="commentbox.js">
+                </script>
             </div>
 
         </main>

@@ -15,3 +15,17 @@ post.addEventListener("click", function(){
     document.getElementById("unordered").appendChild(li2);
  
 });
+
+var comment = document.getElementById("comment-box-comment");
+
+$(comment).keyup(function() {
+if(this.value.length > 140) {
+    document.getElementById("lengthcount").innerHTML = 'Total characters exceed 140';
+    console.log('Total characters exceed 140');
+    comment.setAttribute("class", "border-2 px-3 py-2 bg-red-300")
+} 
+else {
+    document.getElementById("lengthcount").innerHTML= comment.value.length.toString() + '/140';
+    console.log(this.value.length + '/140');
+}       
+ });
