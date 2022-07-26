@@ -9,8 +9,8 @@
     <body class="font-nunito bg-slate-100">
         <header class="border-b-2">
             <img class="object-cover h-40" src="/Webpage/assets/signature_logo.png" alt="Brand Logo">
-            <nav class="font-semibold text-gray-700 min-w-full">
-                <ul class="flex justify-around pt-1">
+            <nav class="font-semibold text-gray-700">
+                <ul class="justify-around pt-1 items-center sm:grid sm:grid-cols-3">
                     <li class="bg-blue-100 px-20 font-bold"><a href="projectgallery.html">Project Gallery</a></li>
                     <li class="px-20"><a href="blog.html">Blog</a></li>
                     <li class="px-20"><a href="aboutme.html">About Me</a></li>
@@ -18,26 +18,41 @@
             </nav>    
         </header>
 
-        <main class="px-6 pt-4">
+        <main class="px-6 pt-4 grid gap-4 place-items-center md:grid-cols-2">
             <!-- PROJECT GALLERY        -->
-            
+
             <!-- CHEAT SHEET PROJECT        -->
-            <div class="flex mt-6 bg-gray-100 px-2 rounded-lg max-w-6xl">
-                <div>
-                    <img class="p-2 object-contain h-60" src="/Projects/cheatsheet/cheatsheet_icon.png" alt="Chaos Icon">
+            <div class="mt-6 bg-gray-100 px-2 rounded-lg h-full w-full items-center">
+                <div class="flex items-center justify-evenly">
+                    <img class="p-2 object-contain h-40 md:h-52" src="/Projects/cheatsheet/cheatsheet_icon.png" alt="Chaos Icon">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-gray-900"><a href="/Blog Posts/chaos/chaos_blogpost.html">#CheatSheet</a></h3>
                 </div>
-                <div class="p-2 flex-auto">
-                    <h3 class="text-3xl font-semibold text-gray-900"><a href="/Blog Posts/chaos/chaos_blogpost.html">#CheatSheet</a></h3>
-                    <article class="text-gray-800 text-lg">
-                     Whoever I asked recommended to start working on projects immeadiately in the learning process. 
-                     In this project I summarized as well as manifested some my learnings about HTML in a static webpage. 
-                     The goal was to provide small code snippets of basic HTML and CSS elements. As for now this includes 
-                     <p class="text-sm font-light mt-2">building time: 3 days</p>
-                    </article>
+
+                <div class="p-4 flex-auto">
+                    <div id="accordion-collapse-1" data-accordion="collapse">
+                        <h2 id="accordion-collapse-heading-1">
+                            <button type="button" class="flex font-semibold items-center justify-between w-full p-4 mt-4 font-large text-left text-gray-800 border border-gray-200 rounded-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                            <span>Description</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                            <div class="p-5 border-gray-600 dark:border-gray-700">
+                            <p class="mb-2 text-gray-600">
+                                Whoever I asked recommended to start working on projects immeadiately in the learning process. 
+                                In this project I summarized as well as manifested some my learnings about HTML in a static webpage. 
+                                The goal was to provide small code snippets of basic HTML and CSS elements. As for now this includes 
+                                HTML tables, form, setup and CSS forms.
+                            </p>
+                            <p class="text-sm font-light mt-2">building time: 3 days</p>
+                            </div>
+                        </div>
+                    </div>  
+                    
 
                     <div class="flex mt-4 justify-between items-end">
                         <div class="bg-gray-600 tracking-wide text-sm text-white px-3 py-2 rounded-lg">
-                            <a class="" href="https://github.com/Marlente/CheatSheet">View Project on GitHub</a>
+                            <a class="" href="https://github.com/Marlente/CheatSheet">View on GitHub</a>
                         </div>
                         <div class="">
                             <ul class="flex">
@@ -53,24 +68,37 @@
             </div>
 
             <!--  BLOG PROJECT        -->
-            <div class="flex mt-6 bg-gray-100 px-2 rounded-lg max-w-6xl">
-                <div>
-                    <img class="p-2 object-contain h-60" src="/Projects/blog/blog_icon.png" alt="Chaos Icon">
+            <div class="mt-6 bg-gray-100 px-2 rounded-lg h-full w-full items-center">
+                <div class="flex items-center justify-evenly">
+                    <img class="p-2 object-contain h-40 md:h-52" src="/Projects/blog/blog_icon.png" alt="Chaos Icon">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-gray-900"><a href="">#Blog</a></h3>
                 </div>
-                <div class="p-2 flex-auto">
-                    <h3 class="text-3xl font-semibold text-gray-900"><a href="">#Blog</a></h3>
-                    <article class="text-gray-800 text-lg">
-                        I appreciate writing down my thoughts and creating my own blog was within 
-                        my goals ever since. Now that I learn to build websites this is one of my first projects. 
-                        I created a basic layout in HTML and styled the page with TailwindCSS. Every blog post has a 
-                        short description and picture that then leads to a different page where the complete blog post can be read. 
-                        This project is one part of my personal webpage.
+
+                <div class="p-4 flex-auto">
+                    <div id="accordion-collapse-2" data-accordion="collapse">
+                        <h2 id="accordion-collapse-heading-2">
+                            <button type="button" class="flex font-semibold items-center justify-between w-full p-4 mt-4 font-large text-left text-gray-800 border border-gray-200 rounded-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-2" aria-expanded="true" aria-controls="accordion-collapse-body-2">
+                            <span>Description</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                        <div class="p-5 border-gray-600 dark:border-gray-700">
+                        <p class="mb-2 text-gray-600">
+                            I appreciate writing down my thoughts and creating my own blog was within 
+                            my goals ever since. Now that I learn to build websites this is one of my first projects. 
+                            I created a basic layout in HTML and styled the page with TailwindCSS. Every blog post has a 
+                            short description and picture that then leads to a different page where the complete blog post can be read. 
+                            This project is one part of my personal webpage.
+                        </p>
                         <p class="text-sm font-light mt-2">building time: 12 days</p>
-                    </article>
+                        </div>
+                    </div>
 
                     <div class="flex mt-4 justify-between items-end">
                         <div class="bg-gray-600 tracking-wide text-sm text-white px-3 py-2 rounded-lg">
-                            <a class="" href="https://github.com/Marlente/marlente.github.io">View Project on GitHub</a>
+                            <a class="" href="https://github.com/Marlente/marlente.github.io">View on GitHub</a>
                         </div>
                         <div class="">
                             <ul class="flex">
@@ -81,26 +109,26 @@
                         </div>
                     </div>
 
-                </div>
+                    </div>
                     
 
             </div>
 
             <!--  FRUITSHOP PROJECT        -->
-            <div class="flex mt-6 bg-gray-100 px-2 rounded-lg max-w-6xl">
-                <div>
-                    <img class="p-2 object-contain h-60" src="/Projects/fruitshop/fruitshop_icon.png" alt="Fuitshop Icon">
+            <div class="mt-6 bg-gray-100 px-2 rounded-lg h-full w-full items-center">
+                <div class="flex items-center justify-evenly">
+                    <img class="p-2 object-contain h-40" src="/Projects/fruitshop/fruitshop_icon.png" alt="Fuitshop Icon">
+                    <h3 class="text-3xl font-semibold text-gray-900"><a href="">#Fruitshop</a></h3>
                 </div>
                 <div class="p-4 flex-auto">
-                    <h3 class="text-3xl font-semibold text-gray-900"><a href="">#Fruitshop</a></h3>
-                    <div id="accordion-collapse" data-accordion="collapse">
-                        <h2 id="accordion-collapse-heading-1">
-                          <button type="button" class="flex font-semibold items-center justify-between w-full p-4 mt-4 font-large text-left text-gray-800 border border-gray-200 rounded-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                    <div id="accordion-collapse-3" data-accordion="collapse">
+                        <h2 id="accordion-collapse-heading-3">
+                          <button type="button" class="flex font-semibold items-center justify-between w-full p-4 mt-4 font-large text-left text-gray-800 border border-gray-200 rounded-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="true" aria-controls="accordion-collapse-body-3">
                             <span>Description</span>
                             <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           </button>
                         </h2>
-                        <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                        <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
                           <div class="p-5 border-gray-600 dark:border-gray-700">
                             <p class="mb-2 text-gray-600">
                                 As part of an application process I built a small online fruitshop. The page enables the user 
@@ -111,11 +139,11 @@
                             <p class="text-sm font-light mt-2">building time: 3 days</p>
                           </div>
                         </div>
-                      
+                    </div>  
 
                     <div class="flex mt-4 justify-between items-end">
                         <div class="bg-gray-600 tracking-wide text-sm text-white px-3 py-2 rounded-lg">
-                            <a class="" href="https://github.com/Marlente/marlente.github.io">View Project on GitHub</a>
+                            <a class="" href="https://github.com/Marlente/marlente.github.io">View on GitHub</a>
                         </div>
                         <div class="">
                             <ul class="flex">
@@ -131,9 +159,52 @@
 
             </div>
 
+            <!--  PROJECT GALLERY PROJECT        -->
+            <div class="mt-6 bg-gray-100 px-2 rounded-lg h-full w-full items-center">
+                <div class="flex items-center justify-evenly">
+                    <img class="p-2 object-contain h-40" src="/Projects/webpage/projectgallery_icon.png" alt="Project Gallery Icon">
+                    <h3 class="text-3xl font-semibold text-gray-900"><a href="">#ProjectGallery</a></h3>
+                </div>
+                <div class="p-4 flex-auto">
+                    <div id="accordion-collapse-4" data-accordion="collapse">
+                        <h2 id="accordion-collapse-heading-4">
+                            <button type="button" class="flex font-semibold items-center justify-between w-full p-4 mt-4 font-large text-left text-gray-800 border border-gray-200 rounded-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-4" aria-expanded="true" aria-controls="accordion-collapse-body-4">
+                            <span>Description</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                            <div class="p-5 border-gray-600 dark:border-gray-700">
+                            <p class="mb-2 text-gray-600">
+                                To showcase what I learned and what project I participated I created this easy page as my personal project gallery. 
+                                The layout is coded in HTML and the page is another part of my personal webpage. For styling I used tailwind CSS and
+                                further used a grid layout to introduce a responsive design.
+                            </p>
+                            <p class="text-sm font-light mt-2">building time: 7 days</p>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flex mt-4 justify-between items-end">
+                        <div class="bg-gray-600 tracking-wide text-sm text-white px-3 py-2 rounded-lg">
+                            <a class="" href="https://github.com/Marlente/marlente.github.io">View on GitHub</a>
+                        </div>
+                        <div class="">
+                            <ul class="flex">
+                                <li class="bg-blue-600 text-white px-2 py-1 rounded-b-lg rounded-r-lg text-xs">HTML</li>
+                                <li class="ml-1 bg-blue-600 text-white px-2 py-1 rounded-b-lg rounded-r-lg text-xs">TailwindCSS</li>
+                                <li class="ml-1 bg-blue-600 text-white px-2 py-1 rounded-b-lg rounded-r-lg text-xs">Grid Design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                    
+
+            </div>
         </main>
 
-        <footer class="bg-blue-100 mt-6 flex justify-between">
+        <footer class="bg-blue-100 mt-6 flex justify-between w-full">
             <div class="m-4 flex pr-4 items-center">
                 <a href="https://www.linkedin.com/in/marlo-k%C3%BCrner-1a5694175/"><img class="h-12" src="/Webpage/assets/linkedin_logo.png" alt="Link to personal Linkedin Profile"></a>
                 <a href="https://www.instagram.com/accounts/login/?next=/marlokuerner/"><img class="ml-2 h-12" src="/Webpage/assets/insta_logo_black.png" alt="Link to personal Instagram Profile"></a>
