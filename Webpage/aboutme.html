@@ -9,11 +9,11 @@
     <body class="font-nunito bg-slate-100">
         <header class="border-b-2">
             <img class="object-cover h-40" src="/Webpage/assets/signature_logo.png" alt="Brand Logo">
-            <nav class="font-semibold text-gray-700 min-w-full">
-                <ul class="flex justify-around pt-1">
-                    <li class="px-20"><a href="projectgallery.html">Project Gallery</a></li>
+            <nav class="font-semibold text-gray-700">
+                <ul class="justify-around pt-1 items-center sm:grid sm:grid-cols-3">
+                    <li class="px-20 font-bold"><a href="projectgallery.html">Project Gallery</a></li>
                     <li class="px-20"><a href="blog.html">Blog</a></li>
-                    <li class="bg-blue-100 px-20 font-bold"><a href="aboutme.html">About Me</a></li>
+                    <li class="bg-blue-100 px-20"><a href="aboutme.html">About Me</a></li>
                 </ul>
             </nav>    
         </header>
@@ -21,7 +21,7 @@
         <main class="px-6 pt-4">
 
             <!-- OPENING SLOGAN       -->
-            <div class="flex bg-gray-100 rounded-lg">
+            <div class="sm:flex bg-gray-100 rounded-lg">
                 <img class="rounded-lg h-60 pr-2" src="/Webpage/assets/aboutme_pic1.png" alt="Chaos Icon">
                 <div class="flex pt-2">
                     <article class="text-gray-800 text-xl p-4">
@@ -47,58 +47,91 @@
                     </article>
                 </div>
             </div>
-            <div class="flex pt-4 justify-evenly">
+            <div class="pt-4 md:grid md:grid-cols-3 md:gap-4 place-items-center items-start">
                 <!-- FAVORITE QUOTES -->
-                <div>
+                <div class="md:col-span-2 md:h-full">
                     <h3 class="text-3xl font-semibold text-gray-900">Favorite Quotes</h3>
-                    <section class="p-2 mt-2 border-2 border-gray-500 rounded-sm">
-                        <p class="">“Most people will choose unhappiness over uncertainty.”</p>
-                        <p class="italic pl-4">-  Tim Ferriss</p>
-                    </section>
-                    <section class="p-2 mt-2 border-2 border-gray-500 rounded-sm">
-                        <p class="">“You'll stop caring what people think about you when you realize how seldom they do...”</p>
-                        <p class="italic">-  David Foster Wallace</p>
-                    </section>
-                    <section class="p-2 mt-2 border-2 border-gray-500 rounded-sm">
-                        <p class="">“Connecting the dots is only possible in retro perspective.”</p>
-                        <p class="italic pl-4">-  Steve Jobs</p>
-                    </section>
-                    <section class="p-2 mt-2 border-2 border-gray-500 rounded-sm">
-                        <p class="">“We are all made of stardust, as brothers of the wild beasts and cousins of the flowers in the fields, we all carry the 
-                        history of the cosmos.”</p>
-                        <p class="italic pl-4">-  Trinh Xuan</p>
-                    </section>
-                    <section class="p-2 mt-2 border-2 border-gray-500 rounded-sm">
-                        <p class="">“Give me a lever long enough and a fulcrum on which to place it, and I shall move the world.”</p>
-                        <p class="italic pl-4">-  Archimedes</p>
-                    </section>
-                    <section class="p-2 mt-2 border-2 border-gray-500 rounded-sm">
-                        <p class="">“History is often shaped by small groups looking forward rather than the backward looking masses.”</p>
-                        <p class="italic pl-4">-  Yuval Harari</p>
-                    </section>
-                    <section class="p-2 mt-2 border-2 border-gray-500 rounded-sm">
-                        <p class="">“A human being is part of a whole [...], a part limited in time and space as something separated from the rest - a kind 
-                            of optical delusion of his conciousness.”</p>
-                        <p class="italic pl-4">-  Albert Einstein</p>
-                    </section>                  
+                    <div class="md:h-full md:grid md:content-between md:pb-10">
+                        <section class="p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                            <p class="">“Most people will choose unhappiness over uncertainty.”</p>
+                            <p class="italic pl-4">-  Tim Ferriss</p>
+                        </section>
+                        <section class="p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                            <p class="">“You'll stop caring what people think about you when you realize how seldom they do...”</p>
+                            <p class="italic">-  David Foster Wallace</p>
+                        </section>
+                        <section class="p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                            <p class="">“Connecting the dots is only possible in retro perspective.”</p>
+                            <p class="italic pl-4">-  Steve Jobs</p>
+                        </section>
+                        <section class="p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                            <p class="">“We are all made of stardust, as brothers of the wild beasts and cousins of the flowers in the fields, we all carry the 
+                            history of the cosmos.”</p>
+                            <p class="italic pl-4">-  Trinh Xuan</p>
+                        </section>
+                        <section class="p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                            <p class="">“Give me a lever long enough and a fulcrum on which to place it, and I shall move the world.”</p>
+                            <p class="italic pl-4">-  Archimedes</p>
+                        </section>
+                        <section class="p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                            <p class="">“History is often shaped by small groups looking forward rather than the backward looking masses.”</p>
+                            <p class="italic pl-4">-  Yuval Harari</p>
+                        </section>
+                        <section class="p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                            <p class="">“A human being is part of a whole [...], a part limited in time and space as something separated from the rest - a kind 
+                                of optical delusion of his conciousness.”</p>
+                            <p class="italic pl-4">-  Albert Einstein</p>
+                        </section>  
+                </div>                
                 </div>
-                <!-- STACK & HOBBIES -->
-                <div class="">
-                    <div>
+                <!-- STACK -->
+                <div class="pt-4 md:pt-0">
+                    <div class="">
                         <h3 class="text-3xl font-semibold text-gray-900">My Stack</h3>
                         <div class="pt-2">
                             <ul>
-                                <li class="flex items-center">
-                                    <img class="h-12" src="/Webpage/assets/html_logo.png" alt="">
+                                <li class="flex items-center pt-2">
+                                    <img class="h-12" src="/Webpage/assets/html_logo.png" alt="HTML">
                                     <p class="pl-3">HTML 5</p>
                                 </li>
-                                <li class="flex items-center">
-                                    <img class="h-12" src="/Webpage/assets/css_logo.png" alt="">
+                                <li class="flex items-center pt-2">
+                                    <img class="h-12" src="/Webpage/assets/css_logo.png" alt="CSS">
                                     <p class="pl-3">CSS</p>
                                 </li>
-                                <li class="flex items-center">
-                                    <img class="h-12" src="/Webpage/assets/javascript_logo.png" alt="">
+                                <li class="flex items-center pt-2">
+                                    <img class="h-12" src="/Webpage/assets/javascript_logo.png" alt="JavaScript">
                                     <p class="pl-3">JavaScript</p>
+                                </li>
+                                <li class="flex items-center pt-2">
+                                    <img class="h-12" src="/Webpage/assets/react_logo.png" alt="React">
+                                    <p class="pl-3">React</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h3 class="text-3xl font-semibold text-gray-900">Interests</h3>
+                        <div class="pt-2">
+                            <ul>
+                                <li class="flex items-center mt-2 bg-gray-100 rounded-lg p-2">
+                                    <img class="w-16" src="/Webpage/assets/books.png" alt="Study and Learn">
+                                    <p class="pl-3">Couriositiy, thrive to learn</p>
+                                </li>
+                                <li class="flex items-center mt-2 bg-gray-100 rounded-lg p-2">
+                                    <img class="w-16" src="/Webpage/assets/muscle.png" alt="Exercise">
+                                    <p class="pl-3 w-3/4">Men sana in corpore sano - sport is essential for my well-being</p>
+                                </li>
+                                <li class="flex items-center mt-2 bg-gray-100 rounded-lg p-2">
+                                    <img class="w-16" src="/Webpage/assets/travel.png" alt="Travel">
+                                    <p class="pl-3 w-3/4">The priviledge to travel shall not be dismissed, I want to live and learn global.</p>
+                                </li>
+                                <li class="flex items-center mt-2 bg-gray-100 rounded-lg p-2">
+                                    <img class="w-16" src="/Webpage/assets/nature.png" alt="Nature and Outdoor">
+                                    <p class="pl-3 w-3/4">With her inherent complexity and balance nature to me will always be astounishing and I enjoy being outdoor</p>
+                                </li>
+                                <li class="flex items-center mt-2 bg-gray-100 rounded-lg p-2">
+                                    <img class="w-16" src="/Webpage/assets/cocktail.png" alt="Enjoy life with a cocktail">
+                                    <p class="pl-3 w-3/4">Life was meant to be enjoyed and beside my desire to grow I try every now and then just to enjoy the process </p>
                                 </li>
                             </ul>
                         </div>
@@ -107,12 +140,16 @@
 
             </div>
             <!-- COMMENT BOX -->
-            <div class="mt-6 flex bg-slate-100">
-                <input id="comment-box-name" type="text" placeholder="Enter name" class="border-2 px-3 py-2">
-                <input id="comment-box-email" type="text" placeholder="Enter email" class="border-2 px-3 py-2">
-                <input id="comment-box-comment" type="text" placeholder="Enter comment" class="border-2 px-3 py-2">
-                <p id="lengthcount" type="text" class="px-3 py-2 italic text-s items-center">0/140</p>
-                <button id="post" class="bg-blue-500 text-white ml-4 px-3 py-2 rounded-lg font-semibold">Post</button>
+            <h3 class="text-3xl font-semibold text-gray-900 mt-6">Comment Box</h3>
+            <div class="mt-4 bg-slate-100">
+                <input id="comment-box-name" type="text" placeholder="Enter name" class="border-2 px-3 py-2 mt-2">
+                <input id="comment-box-email" type="text" placeholder="Enter email" class="border-2 px-3 py-2 mt-2">
+                <input id="comment-box-comment" type="text" placeholder="Enter comment" class="border-2 px-3 mt-2 py-2">
+                <div class="flex mt-2">
+                    <p id="lengthcount" type="text" class="px-3 py-2 italic text-s mt-2 items-center w-min">0/140</p>
+                    <button id="post" class="bg-blue-500 text-white ml-6 px-3 py-0 rounded-lg font-semibold">Post</button> 
+                </div>
+                
                 <ul id="unordered">
                    
                </ul>
