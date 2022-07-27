@@ -47,18 +47,18 @@
                     </article>
                 </div>
             </div>
-            <div class="pt-4 md:grid md:grid-cols-3 md:gap-4 place-items-center items-start">
+            <div class="pt-4 md:grid md:grid-cols-2 md:gap-4">
                 <!-- FAVORITE QUOTES -->
-                <div class="md:col-span-2 md:h-full">
+                <div class="">
                     <h3 class="text-3xl font-semibold text-gray-900">Favorite Quotes</h3>
-                    <div class="md:h-full md:grid md:content-between md:pb-10">
+                    <div class="md:h-full md:grid md:content-between md:pb-10bg-center bg-contain bg-repeat-y py-4 pb-4" style="background-image: url(/Webpage/assets/dots_background.png)">
                         <section class="p-2 mt-2 border-2 border-gray-200 rounded-lg">
                             <p class="">“Most people will choose unhappiness over uncertainty.”</p>
                             <p class="italic pl-4">-  Tim Ferriss</p>
                         </section>
                         <section class="p-2 mt-2 border-2 border-gray-200 rounded-lg">
                             <p class="">“You'll stop caring what people think about you when you realize how seldom they do...”</p>
-                            <p class="italic">-  David Foster Wallace</p>
+                            <p class="italic pl-4">-  David Foster Wallace</p>
                         </section>
                         <section class="p-2 mt-2 border-2 border-gray-200 rounded-lg">
                             <p class="">“Connecting the dots is only possible in retro perspective.”</p>
@@ -84,11 +84,12 @@
                         </section>  
                 </div>                
                 </div>
-                <!-- STACK -->
-                <div class="pt-4 md:pt-0">
+                
+                <div class="pt-4 md:pt-0 md:h-full content-between">
                     <div class="">
-                        <h3 class="text-3xl font-semibold text-gray-900">My Stack</h3>
-                        <div class="pt-2">
+                        <!-- STACK
+                        <div class="pt-2 h-full content-between">
+                            <h3 class="text-3xl font-semibold text-gray-900">My Stack</h3>
                             <ul>
                                 <li class="flex items-center pt-2">
                                     <img class="h-12" src="/Webpage/assets/html_logo.png" alt="HTML">
@@ -108,14 +109,54 @@
                                 </li>
                             </ul>
                         </div>
+                    -->
+                        <!-- APPLICATION PROJECTS -->
+                        <div class="pt-2">
+                            <h3 class="text-3xl font-semibold text-gray-900">Application Projects</h3>
+                            <div class="pt-2">
+                                <ul>
+                                    <li class="flex justify-between items-center p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                                        <img class="h-12" src="/Webpage/assets/dice_one.png" alt="HTML">
+                                        <p class="px-3"><a class="text-blue-800 font-bold" href="https://github.com/Marlente/CheatSheet">
+                                            Tribut Page:</a> <br>created a CheatSheet in the progress of learning HTML and CSS</p>
+                                    </li>
+                                    <li class="flex justify-between items-center p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                                        <p class="px-3"><a class="text-blue-800 font-bold" href="https://github.com/Marlente/marlente.github.io/blob/master/Webpage/projectgallery.html">Project Gallery:</a> 
+                                            <br>displayed the project since beginning to code four weeks ago in separated cards</p>
+                                        <img class="h-12" src="/Webpage/assets/dice_two.png" alt="CSS">                            
+                                    </li>
+                                    <li class="flex justify-between items-center p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                                        <img class="h-12" src="/Webpage/assets/dice_three.png" alt="JavaScript">
+                                        <p class="px-3"><a class="text-blue-800 font-bold" href="https://github.com/Marlente/marlente.github.io/blob/master/Webpage/commentbox.js">CommentBox:</a> 
+                                            <br>created a JavaScript feature enableling you to leave a commetn on this page</p>
+                                    </li>
+                                    <li class="flex justify-between items-center p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                                        <p class="px-3"><a class="text-blue-800 font-bold" href="https://github.com/Marlente/fruitshop">Fruitshop:</a> 
+                                            <br>a simple shopping cart where you can put in choosen fruits from the shelf</p>
+                                        <img class="h-12" src="/Webpage/assets/dice_four.png" alt="React">
+                                    </li>
+                                    <li class="flex justify-between items-center p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                                        <img class="h-12" src="/Webpage/assets/dice_five.png" alt="React">
+                                        <p class="px-3"><a class="text-blue-800 font-bold" href="https://github.com/Marlente/marlente.github.io/blob/master/Webpage/aboutme.html">Webpage:</a> 
+                                            <br>even before I encoutered Founders and Coders I planned on building my webpage including blog, projects and a self-presentation</p>
+                                    </li>
+                                    <li class="flex items-center justify-between p-2 mt-2 border-2 border-gray-200 rounded-lg">
+                                        <p class="pl-3"><a class="text-blue-800 font-bold" href="">Feature:</a> 
+                                        <br>JavaScript driven feature</p>
+                                        <img class="h-12" src="/Webpage/assets/dice_six.png" alt="React">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="pt-4">
+                    <div class="pt-6 h-full">
                         <h3 class="text-3xl font-semibold text-gray-900">Interests</h3>
                         <div class="pt-2">
                             <ul>
                                 <li class="flex items-center mt-2 bg-gray-100 rounded-lg p-2">
                                     <img class="w-16" src="/Webpage/assets/books.png" alt="Study and Learn">
-                                    <p class="pl-3">Couriositiy, thrive to learn</p>
+                                    <p class="pl-3">Couriositiy, thrive to learn with the naive goal to understand reality</p>
                                 </li>
                                 <li class="flex items-center mt-2 bg-gray-100 rounded-lg p-2">
                                     <img class="w-16" src="/Webpage/assets/muscle.png" alt="Exercise">
@@ -140,7 +181,7 @@
 
             </div>
             <!-- COMMENT BOX -->
-            <h3 class="text-3xl font-semibold text-gray-900 mt-6">Comment Box</h3>
+            <h3 class="text-3xl font-semibold text-gray-900 mt-8">Comment Box</h3>
             <div class="mt-4 bg-slate-100">
                 <input id="comment-box-name" type="text" placeholder="Enter name" class="border-2 px-3 py-2 mt-2">
                 <input id="comment-box-email" type="text" placeholder="Enter email" class="border-2 px-3 py-2 mt-2">
