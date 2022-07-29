@@ -6,7 +6,10 @@
 ###Further Development
 
 ##1. Purpose
-This page is dedicated to mirror my personal development as well as to express my self and share stories and insights. Further building this page as a project helped me to learn coding in the first place. It's just the starting point as I plan to manage all kinds of things via this webpage.
+This page is dedicated to mirror my personal development as well as to express my self and share stories and insights. Further building this page as a project helped me to learn coding in the first place. It's just the starting point as I plan to manage all kinds of things via this webpage. 
+####Founders and Coders
+Eager to know if you guys reading all the stuff I wrote, if so feel free to prove it by letting me know your favorite book! :D 
+I actually planned to build this personal webpage before deciding to apply for the bootcamp. Luckily it turned out that I can build in couple of the projects you demand: comment box, project gallery, website.
 
 ##2. Setup
 ###Blog
@@ -25,5 +28,11 @@ The next immediate goal is to build reusable blocks probably with react.js for h
 ####Connect own domain
 To boost motivation I initially bought my own domain (www.marlo-kuerner.com) it's another self-evident step to connect it while still hosting the page via GitHub Pages. 
 
+####JS features
+instead of the comment box I plan to introduce other javascript driven features to eg. leave me a message, also working on upstyling and hoover and click events.
+
+####Speed Improvements
+at the moment it can take quite a while to load all the contents. To improve this I will reorganize pictures by eg. giving a fixed size
+ 
 ####Expand Content
 Furter I will continue to write blog articles as this is just fun from time to time. I plan to include a section for favorite books, podcasts and similar things.
